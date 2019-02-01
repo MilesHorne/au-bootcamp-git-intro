@@ -13,12 +13,12 @@
 #
 #          >RMB3263_Cyrtodactylus_philippinicus_Negros
 #          CGGGCCCATACCCCGAAAATGTTGGTATAAACCCCTTCCTATACTAATAAACCCCATTATTTGATCACTATTACTAAC
-#          
+
 #          >CWL052_Cyrtodactylus_philippinicus_Negros
 #          CGGGCCCATACCCCGAAAATGTTGGTATAAACCCCTTCCTATACTAATAAACCCCATTATTTGATCACTATTACTAAC
 #
 #          If you run this script on this fasta file, you want to get the
-#          following output:          
+#          following output:
 #
 #          $ sh count-fasta-seqs.sh example-seqs1.fasta
 #          2 example-seqs1.fasta
@@ -29,15 +29,15 @@
 #
 #          >RMB7155_Sphenomorphus_arborens_Negros
 #          ATGAACCCCATTATAACCTCCCTCATTTTATCAAGCCTGGCCCTTGGAACCGTAATCACACTAACAAGCTACCACTGA
-#          
+
 #          >RMB7156_Sphenomorphus_arborens_Negros
 #          ATGAACCCCATTATAACCTCCCTCATTTTATCAAGCCTGGCCCTTGGAACCGTAATCACACTAACAAGCTACCACTGA
-#          
+#
 #          >RMB7163_Sphenomorphus_arborens_Negros
 #          ATGAACCCCATTATAACCTCCCTCATTTTATCAAGCCTGGCCCTTGGAACCGTAATCACACTAACAAGCTACCACTGA
 #
 #          If you run this script on BOTH fasta files, you want to get the
-#          following output:          
+#          following output:
 #
 #          $ sh count-fasta-seqs.sh example-seqs1.fasta example-seqs2.fasta
 #          2 example-seqs1.fasta
@@ -63,7 +63,7 @@
 # files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
 
-echo "$@"
+#echo "$@"
 
 # How are you going to work with each file path?
 # HINT: for loop (remember "for do done"?)
@@ -93,4 +93,10 @@ echo "$@"
 # Good luck!
 #
 # ADD YOUR CODE BELOW:
+
+
+grep -fec echo "$@"
+
+basename echo "$@"
+
 
