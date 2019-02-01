@@ -94,9 +94,14 @@ echo "$@"
 #
 # ADD YOUR CODE BELOW:
 
-Hey everybody! Just testing this out before I start editing the script. 
+# Hey everybody! Just testing this out before I start editing the script. 
 
 for filepath in "$@"
 do
-   YOUR CODE HERE
+   
+#show sequence name and total number
+filename=$(basename "$f")
+echo "$(grep '>' $filepath | wc -l) $filename"
+
 done
+
