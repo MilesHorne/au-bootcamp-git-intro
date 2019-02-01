@@ -95,3 +95,8 @@ echo "$@"
 # ADD YOUR CODE BELOW:
 
 Hey everybody! Just testing this out before I start editing the script. 
+
+for filepath in "$@"
+do
+   YOUR CODE HERE
+done
