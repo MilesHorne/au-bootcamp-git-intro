@@ -1,4 +1,4 @@
-#!/bin/sh
+!/bin/sh
 
 # How this script should behave:
 #
@@ -94,9 +94,17 @@
 #
 # ADD YOUR CODE BELOW:
 
+# Hey everybody! Just testing this out before I start editing the script. 
+#added -a so it would work with multiple files------ maybe?
 
-grep -fec echo "$@"
+for filepath in "$@"
+do
 
-basename echo "$@"
+#show sequence name and total number
 
+filename=$(basename -a  "$f")
+
+echo "$(grep '>' $filepath | wc -l) $filename"
+
+done
 
