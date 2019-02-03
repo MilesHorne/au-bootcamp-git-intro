@@ -1,4 +1,4 @@
-!/bin/sh
+#!/bin/sh
 
 # How this script should behave:
 #
