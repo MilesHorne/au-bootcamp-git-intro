@@ -107,4 +107,5 @@ filename=$(basename -a  "$f")
 echo "$(grep '>' $filepath | wc -l) $filename"
 
 done
+#I ran the test file and it failed spectacularly. Does anyone know how to do this?
 
