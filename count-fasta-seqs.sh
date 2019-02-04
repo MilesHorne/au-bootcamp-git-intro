@@ -108,4 +108,4 @@ echo "$(grep '>' $filepath | wc -l) $filename"
 
 done
 #I ran the test file and it failed spectacularly. Does anyone know how to do this?
-
+# I have no idea how to make this script work, but I know how to push/pull and that is what this homework assignment is about.
